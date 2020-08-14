@@ -5,7 +5,6 @@ I will be adding new commands overtime.
 
 Currently in the works :
 
-<<<<<<< HEAD
 Basic Commands :
     Clear Command - Clears certain amount of messages in discord (DONE)
     Rock-Paper-Scissor - Plays Rock-Paper-Scissor with the user (DONE)
@@ -22,23 +21,3 @@ Advanced Commands :
             - Amount of confirmed cases that was obtained today
             - Total Deaths
     Reddit Subreddit Notifier - Sends a message when a new post is posted in a subreddit
-=======
-## Basic Commands :
-
-Clear Command - Clears certain amount of messages in discord (DONE),
-
-Rock-Paper-Scissor - Plays Rock-Paper-Scissor with the user (DONE),
-
-Flip Coin - Flips a coin for the user,
-
-Randomizer - Randomizes a list that the user wants,
-
-Ping Checker : Checks ping for discord,
-
-
-## Advanced Commands : 
-
-Coronavirus Info - Checks out the current status of the pandemic in the United States,
-
-Reddit Subreddit Notifier - Sends a message when a new post is posted in a subreddit,
->>>>>>> fe2ec541b5e18ffe641784e95000a4c68b214b84
