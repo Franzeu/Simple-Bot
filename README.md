@@ -12,8 +12,6 @@ Currently in the works :
     
     Flip Coin - Flips a coin for the user
     
-    Randomizer - Randomizes a list that the user wants (In Progress)
-    
     Ping Checker : Checks ping for discord (DONE)
     
     Member Join/Leave : Notifies server if member has joined or left the server (DONE)
