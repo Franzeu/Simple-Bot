@@ -9,8 +9,9 @@ Basic Commands :
     Clear Command - Clears certain amount of messages in discord (DONE)
     Rock-Paper-Scissor - Plays Rock-Paper-Scissor with the user (DONE)
     Flip Coin - Flips a coin for the user
-    Randomizer - Randomizes a list that the user wants 
-    Ping Checker : Checks ping for discord
+    Randomizer - Randomizes a list that the user wants (In Progress)
+    Ping Checker : Checks ping for discord (DONE)
+    Member Join/Leave : Notifies server if member has joined or left the server (DONE)
 
 
 Advanced Commands : 
