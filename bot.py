@@ -4,7 +4,7 @@ from discord.ext import commands, tasks
 from itertools import cycle
 
 client = commands.Bot(command_prefix = "!")
-token = 'NzM5ODk5NDM0MzQyNjc4NTg5.XyhLCw.xxa1A_39Wnj18QcPYesKCsitpzc' #Insert your Discord Token here
+token = 'token' #Insert your Discord Token here
 status = cycle(['with python :)', 'around my code :D'])
 
 @client.event 
