@@ -4,7 +4,7 @@ from discord.ext import commands, tasks
 from itertools import cycle
 
 client = commands.Bot(command_prefix = "!")
-token = 'token' #Insert your Discord Token here
+token = 'NzM5ODk5NDM0MzQyNjc4NTg5.XyhLCw.EdIppNOheFppTCTwdz4UvXGc1XE' #Insert your Discord Token here
 status = cycle(['with python :)', 'around my code :D'])
 
 @client.event 
@@ -23,7 +23,7 @@ async def clear(ctx, amount : int):
 
 #Clear command - deletes 10000 messages
 @client.command()
-async def clearAll(ctx):
+async def clearall(ctx):
     await ctx.channel.purge(limit = 10000)
 
 #Clear command error handling if there is a missing argument
@@ -66,22 +66,43 @@ async def rps_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("**Please input a response of either Rock, Paper, or Scissors.**")
 
+#Ping Command
 @client.command()
 async def ping(ctx):
     await ctx.send(f'Your latency is: **{round(client.latency * 1000)}**ms')
 
+#Member join notification
 @client.event
-async def member_join(member):
+async def on_member_join(member):
     print(f'{member} has joined the server.')
 
+#Member leave notification
 @client.event
-async def member_remove(member):
+async def on_member_remove(member):
     print(f'{member} has left the server.')
 
-#Error handling if a command is mispelled or a unknown command is used
+#Coin flip command
+@client.command()
+async def coinflip(ctx):
+    responses = ['Heads','Tails']
+    await ctx.send(f"{random.choice(responses)}")
+
+#Kick command
+@client.command()
+async def kick(ctx, member : discord.Member, *, reason = None):
+    await member.kick(reason = reason)
+    await ctx.send(f'**Kicked** {member.mention}')
+
+#Ban command
+@client.command()
+async def ban(ctx, member : discord.Member, *, reason = None):
+    await member.ban(reason = reason)
+    await ctx.send(f'**Banned** {member.mention}')
+
+#Error handling if a command is misspelled or a unknown command is used, [not working!]
 @client.event
-async def error_command(ctx, error):
+async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("**Invalid command used.")
+        await ctx.send("**Invalid command used.**")
 
 client.run(token)

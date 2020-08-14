@@ -10,13 +10,13 @@ Currently in the works :
     
     Rock-Paper-Scissor - Plays Rock-Paper-Scissor with the user (DONE)
     
-    Flip Coin - Flips a coin for the user
+    Flip Coin - Flips a coin (DONE)
     
     Ping Checker : Checks ping for discord (DONE)
     
     Member Join/Leave : Notifies server if member has joined or left the server (DONE)
     
-    Kick / Ban : Mods or higher are able to kick or ban users from the server
+    Kick / Ban : Mods or higher are able to kick or ban users from the server (DONE)
     
     Timer - User is able to set a certain time and make the bot do a countdown (Maybe)
     
